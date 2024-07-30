@@ -1,6 +1,9 @@
 package interfacesGraficas;
 
 import javax.swing.*;
+
+import Formularios.LoginForm;
+
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -106,15 +109,17 @@ public class Menu extends JFrame {
         btnCategoria.setBounds(555, 197, 231, 151);
         getContentPane().add(btnCategoria);
 
-        JButton btnCerrar = new JButton("Cerrar");
+        JButton btnCerrar = new JButton("Cerrar Seccion");
         btnCerrar.setFont(new Font("Tahoma", Font.BOLD, 14));
         btnCerrar.setForeground(new Color(255, 255, 255));
         btnCerrar.setBackground(new Color(64, 0, 128));
         btnCerrar.setBounds(555, 371, 231, 151);
         btnCerrar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                // Acción para el botón cerrar si se requiere algo más
-                System.exit(0); // Cierra la aplicación
+            	
+            	setVisible(false);
+                LoginForm loginForm = new LoginForm();
+                loginForm.setVisible(true);
             }
         });
         getContentPane().add(btnCerrar);
