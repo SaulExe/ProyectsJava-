@@ -3,9 +3,10 @@ package Formularios;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import java.net.URL;
 
-import Clases.consultas;
+import conexBD.consultas;
+
+import java.net.URL;
 
 public class registroForm {
 

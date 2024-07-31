@@ -3,9 +3,11 @@ package Formularios;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+
+import conexBD.consultas;
+
 import java.net.URL;
 
-import Clases.consultas;
 import interfacesGraficas.Menu;
 
 public class LoginForm {

@@ -1,4 +1,4 @@
-package Clases;
+package conexBD;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -60,6 +60,15 @@ public class Menu extends JFrame {
 
         
         JButton btnProducto = new JButton("Producto");
+        btnProducto.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        		
+        		setVisible(false);
+                MenuProductos menuProductos = new MenuProductos();
+                menuProductos.frame.setVisible(true);
+        		
+        	}
+        });
         btnProducto.setFont(new Font("Tahoma", Font.BOLD, 14));
         btnProducto.setForeground(new Color(255, 255, 255));
         btnProducto.setBackground(new Color(64, 0, 128));
@@ -127,6 +136,8 @@ public class Menu extends JFrame {
         configurarVentana();
         initComponents();
     }
+    
+ 
 
     private void configurarVentana() {
         this.setSize(843, 597);
